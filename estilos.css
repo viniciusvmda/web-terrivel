@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+
+main {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.campo {
+	line-height: 1.5em;
+}
+
+.campo > input {
+	width: 300px;
+	display; block;
+}
+
+.campo > button {
+	margin: 1em auto 0 auto;
+	width: 300px;
+	display: block;
+}
+
+.campo-checkbox > input{
+	display; inline;
+	width: 10px;
+} 

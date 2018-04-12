@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monster Eats</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Monster Eats</h1>
+		</header>
+		<form action="http://terrivel.herokuapp.com/monster" method="POST">
+			<div class="campo">
+				<label for="num_pedras">Número de Pedras *</label>
+				<input type="number" name="num_pedras" min="1" step="1" required>
+			</div>
+			<div class="campo">
+				<label for="tam_pedras">Tamanho das pedras *</label>
+				<input type="number" name="tam_pedras" min="1" max="7" step="0.5" required>
+			</div>
+			<div class="campo">
+				<label for="nome">Nome *</label>
+				<input type="text" name="nome" pattern="[a-zA-Z]*" required>
+			</div>
+			<div class="campo">
+				<label for="corCeu1">Cor do céu 1</label>
+				<input type="text" name="corCeu1">
+			</div>
+			<div class="campo">
+				<label for="corCeu2">Cor do céu 2</label>
+				<input type="text" name="corCeu2">
+			</div>
+			<div class="campo">
+				<label for="tipo_pedras">Tipo das pedras</label>
+				<select>
+					<option value="marroada">Marroada</option>
+					<option value="ametista">Ametista</option>
+					<option value="topazio">Topazio</option>
+					<option value="espinela">Espinela</option>
+				</select>
+			</div>
+			<div class="campo campo-checkbox">
+				<input type="checkbox" name="tipo_pedras_sortidas">
+				<label for="tipo_pedras_sortidas">Possui pedras sortidas</label>
+			</div>
+			<div class="campo">
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
